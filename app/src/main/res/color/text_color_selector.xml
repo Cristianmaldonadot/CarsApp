@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color para el estado habilitado -->
+    <item android:color="@color/color_enabled" android:state_enabled="true" />
+    <!-- Color para otros estados -->
+    <item android:color="@color/color_disabled" android:state_enabled="false"  />
+</selector>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <TextView
+            android:id="@+id/tv_car_marca"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:fontFamily="@font/chakra_petch_semibold"
+            android:text="@string/tv_car_marca"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_car_modelo"
+            android:layout_marginTop="20sp"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/tv_car_modelo"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:fontFamily="@font/chakra_petch_semibold"
+            android:text="@string/tv_car_modelo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/tv_car_marca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="25sp"
+            android:gravity="start"
+            />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="320dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_car_modelo"
+            android:layout_marginTop="20sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
